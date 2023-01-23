@@ -8,21 +8,32 @@
     align-items: center;
     height: 340px;
     z-index: 3;
+    svg {
+        width: 30px;
+        height: 30px;
+    }
+    svg path {
+        fill: $main-color;
+    }
     &__link {
+        transition: 0.5s;
         &:hover {
+            transform: scale(1.2);
             svg path {
-                fill: $main-color;
+                fill: #014f86;
             }
         }
     }
     &__divider {
         width: 2px;
         height: 70px;
-        background-color: #000;
+        background-color: $main-color;
     }
     &__text {
-        height: 150px;
+        height: 120px;
         width: 25px;
+        color: $main-color;
+        letter-spacing: 3px;
         span {
             transform: rotate(-90deg) translate(-30%, -260%);
             display: block;

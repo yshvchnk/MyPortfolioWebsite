@@ -1,8 +1,9 @@
 .promo {
     min-height: 100vh;
     position: relative;
-    background: url('../img/main_bg.jpg') no-repeat 50%/cover;
-    padding-top: 205px;
+    background: url("../img/my_main_bg.jpg") no-repeat 50% / cover;
+    padding: 205px 0 0 120px;
+    color: #fff;
     &__title {
         width: 535px;
         margin-top: 10px;
@@ -11,6 +12,7 @@
         position: relative;
         padding-left: 10px;
         z-index: 2;
+        letter-spacing: 3px;
         @include before_circle;
     }
     &__buttons {
@@ -21,10 +23,12 @@
         justify-content: space-between;
     }
     &__link {
-        color: #000;
+        color: #fff;
         font-weight: 700;
+        transition: 0.5s;
         &:hover {
-            color: #000;
+            color: #fff;
+            transform: scale(1.2);
             text-decoration: none;
         }
     }

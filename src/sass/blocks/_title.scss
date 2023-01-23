@@ -23,6 +23,7 @@
     &__section-title {
         position: relative;
         text-align: center;
+        letter-spacing: 3px;
         @include before_circle;
         &:before {
             top: -6px;
